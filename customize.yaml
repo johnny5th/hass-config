@@ -1,0 +1,65 @@
+switch.bedroom_fan_switch:
+  friendly_name: Bedroom Fan
+  icon: mdi:fan
+light.bedroom_light_level:
+  friendly_name: Bedroom Light
+light.dining_room_light_level:
+  friendly_name: Dining Room Light
+switch.guest_hallway_light_switch:
+  friendly_name: Guest Hallway Light
+  icon: mdi:lightbulb
+switch.kitchen_light_switch:
+  friendly_name: Kitchen Light
+  icon: mdi:lightbulb
+light.kitchen_nook_light_level:
+  friendly_name: Kitchen Nook Light
+switch.laundry_room_light_switch:
+  friendly_name: Laundry Room Light
+  icon: mdi:lightbulb
+light.living_room_fan_light_level:
+  friendly_name: Living Room Fan Light
+  icon: mdi:lightbulb
+switch.living_room_fan_switch:
+  friendly_name: Living Room Fan
+  icon: mdi:fan
+switch.nursery_fan_switch:
+  friendly_name: Nursery Fan
+  icon: mdi:fan
+light.nursery_light_level:
+  friendly_name: Nursery Light
+switch.office_fan_switch:
+  friendly_name: Office Fan
+  icon: mdi:fan
+light.office_light_level:
+  friendly_name: Office Light
+light.living_room_light_level:
+  friendly_name: Living Room Light
+sensor.kwikset_touchpad_electronic_deadbolt_alarm_level:
+  hidden: true
+sensor.kwikset_touchpad_electronic_deadbolt_alarm_type:
+  hidden: true
+lock.kwikset_touchpad_electronic_deadbolt_locked:
+  hidden: true
+switch.noise_machine_switch:
+  friendly_name: Noise Machine
+  icon: mdi:waves
+binary_sensor.entryway_thermostat_fan:
+  hidden: true
+binary_sensor.entryway_thermostat_has_leaf:
+  hidden: true
+sensor.entryway_thermostat_humidity:
+  hidden: true
+sensor.entryway_thermostat_hvac_state:
+  hidden: true
+binary_sensor.entryway_thermostat_is_locked:
+  hidden: true
+binary_sensor.entryway_thermostat_is_using_emergency_heat:
+  hidden: true
+binary_sensor.entryway_thermostat_online:
+  hidden: true
+sensor.entryway_thermostat_operation_mode:
+  hidden: true
+sensor.entryway_thermostat_target:
+  hidden: true
+sensor.entryway_thermostat_temperature:
+  hidden: true

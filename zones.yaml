@@ -1,0 +1,12 @@
+- name: Work
+  latitude: 32.494643
+  longitude: -94.735243
+  radius: 400
+  icon: mdi:briefcase
+
+# This will override the default home zone
+- name: Home
+  latitude: 32.511418
+  longitude: -95.406319
+  radius: 400
+  icon: mdi:home

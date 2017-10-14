@@ -1,0 +1,51 @@
+kitchen:
+  name: Kitchen
+  entities:
+    - switch.kitchen_light_switch
+    - light.kitchen_nook_light_level
+
+bedroom:
+  name: Bedroom
+  entities:
+    - switch.bedroom_fan_switch
+    - light.bedroom_light_level
+    - switch.noise_machine_switch
+
+living_room: 
+  name: Living Room
+  entities:
+    - switch.living_room_fan_switch
+    - light.living_room_fan_light_level
+    - light.living_room_light_level
+
+dining_room:
+  name: Dining Room
+  entities:
+    - light.dining_room_light_level
+
+hallways:
+  name: Hallways
+  entities: switch.guest_hallway_light_switch
+
+laundry-room:
+  name: Laundry Room
+  entities:
+    - switch.laundry_room_light_switch
+
+office:
+  name: Office
+  entities:
+    - switch.office_fan_switch
+    - light.office_light_level
+
+nursery:
+  name: Nursery
+  entities:
+    - switch.nursery_fan_switch
+    - light.nursery_light_level
+
+presence:
+  name: People
+  entities:
+    - device_tracker.johnny_martins_iphone
+    - device_tracker.jackie_martins_iphone

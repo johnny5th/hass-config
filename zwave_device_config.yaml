@@ -1,0 +1,12 @@
+light.level_2:
+  ignored: false
+  polling_intensity: 0
+sensor.kwikset_touchpad_electronic_deadbolt_alarm_level:
+  ignored: true
+  polling_intensity: 0
+sensor.kwikset_touchpad_electronic_deadbolt_alarm_type:
+  ignored: true
+  polling_intensity: 0
+lock.kwikset_touchpad_electronic_deadbolt_locked:
+  ignored: true
+  polling_intensity: 0

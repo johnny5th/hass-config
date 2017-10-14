@@ -1,0 +1,92 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 32.5316
+  longitude: -95.3916
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 177
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Chicago
+  # Customization file
+  customize: !include customize.yaml
+  customize_domain:
+    zwave:
+      hidden: true
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  api_password: !secret http_password
+  base_url: https://home.johnny5th.com:443
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Weather prediction
+sensor: !include sensors.yaml
+
+# Text to speech
+tts:
+  - platform: google
+
+zwave:
+  usb_path: /dev/ttyACM0
+  
+ios:
+
+apple_tv:
+  - host: 10.0.1.3
+    login_id: 00000000-063b-b62e-c0bb-971874cf459e
+    name: Living Room
+    credentials: C19CB6AE779E42D0:B33B24C46505EFC31272F5DA8BDE2AF680A9756EFED763D483A2A03DC2E63011
+
+emulated_hue:
+  host_ip: 10.0.1.50
+  exposed_domains:
+    - light
+    - switch
+
+nest:
+  client_id: !secret nest_id
+  client_secret: !secret nest_secret
+  
+usps:
+  username: !secret usps_username
+  password: !secret usps_password
+  
+camera:
+  - platform: usps
+    scan_interval: 5
+
+zone: !include zones.yaml
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
