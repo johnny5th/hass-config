@@ -1,12 +1,30 @@
-light.level_2:
+light.dining_room_light_level:
   ignored: false
-  polling_intensity: 0
-sensor.kwikset_touchpad_electronic_deadbolt_alarm_level:
+  polling_intensity: 1
+light.nursery_light_level:
+  ignored: false
+  polling_intensity: 1
+light.bedroom_light_level:
+  ignored: false
+  polling_intensity: 1
+light.kitchen_nook_light_level:
+  ignored: false
+  polling_intensity: 1
+light.living_room_fan_light_level:
+  ignored: false
+  polling_intensity: 1
+light.living_room_light_level:
+  ignored: false
+  polling_intensity: 1
+light.office_light_level:
+  ignored: false
+  polling_intensity: 1
+sensor.living_room_sensor_alarm_level:
   ignored: true
   polling_intensity: 0
-sensor.kwikset_touchpad_electronic_deadbolt_alarm_type:
+sensor.living_room_sensor_alarm_type:
   ignored: true
   polling_intensity: 0
-lock.kwikset_touchpad_electronic_deadbolt_locked:
+sensor.living_room_sensor_sourcenodeid:
   ignored: true
   polling_intensity: 0

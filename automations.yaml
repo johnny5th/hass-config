@@ -1,1 +1,51 @@
-[]
+- id: start_homekit
+  alias: “Start Homekit”
+  trigger: 
+    - platform: event
+      event_type: zwave.network_ready
+  action:
+    - service: homekit.start
+    
+- id: living_room_motion_light_on
+  alias: Living Room Motion Sensors Lights On
+  trigger:
+    platform: state
+    entity_id: binary_sensor.living_room_sensor_movement
+    to: 'on'
+  condition: 
+    condition: time
+    after: '23:00'
+    before: '7:00'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: light.living_room_light_level
+      data:
+        brightness: 30
+    - delay:
+        minutes: 1
+    - service: homeassistant.turn_off
+      entity_id: light.living_room_light_level
+
+- id: lock_up
+  alias: Lock Up
+  trigger:
+    - platform: time
+      at: '23:00:00'
+  action:
+    - service: cover.close_cover
+      entity_id: cover.garage_door
+    - service: homeassistant.turn_off
+      entity_id: switch.front_entryway_outside_light_switch
+    - service: lock.lock
+      entity_id: lock.front_door_deadbolt_locked
+
+- id: front_porch_sunset
+  alias: Turn On Front Porch At Sunset
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "+00:20:00"
+  action:
+    service: homeassistant.turn_on
+    entity_id: switch.front_entryway_outside_light_switch
+

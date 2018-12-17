@@ -16,30 +16,31 @@ light.kitchen_nook_light_level:
 switch.laundry_room_light_switch:
   friendly_name: Laundry Room Light
   icon: mdi:lightbulb
+switch.garage_light_switch:
+  friendly_name: Garage Light
+  icon: mdi:lightbulb
 light.living_room_fan_light_level:
   friendly_name: Living Room Fan Light
   icon: mdi:lightbulb
 switch.living_room_fan_switch:
   friendly_name: Living Room Fan
   icon: mdi:fan
-switch.nursery_fan_switch:
-  friendly_name: Nursery Fan
+switch.charlie_fan_switch:
+  friendly_name: Charlie's Fan
   icon: mdi:fan
-light.nursery_light_level:
-  friendly_name: Nursery Light
-switch.office_fan_switch:
-  friendly_name: Office Fan
+switch.zoe_fan_switch:
+  friendly_name: Zoe's Fan
   icon: mdi:fan
-light.office_light_level:
-  friendly_name: Office Light
+switch.front_entryway_light_switch:
+  friendly_name: Front Entryway Light
+  icon: mdi:lightbulb
+switch.front_entryway_outside_light_switch:
+  friendly_name: Front Entryway Outside Light
+  icon: mdi:lightbulb
+light.zoe_light_level:
+  friendly_name: Zoe's Light
 light.living_room_light_level:
   friendly_name: Living Room Light
-sensor.kwikset_touchpad_electronic_deadbolt_alarm_level:
-  hidden: true
-sensor.kwikset_touchpad_electronic_deadbolt_alarm_type:
-  hidden: true
-lock.kwikset_touchpad_electronic_deadbolt_locked:
-  hidden: true
 switch.noise_machine_switch:
   friendly_name: Noise Machine
   icon: mdi:waves
@@ -62,4 +63,38 @@ sensor.entryway_thermostat_operation_mode:
 sensor.entryway_thermostat_target:
   hidden: true
 sensor.entryway_thermostat_temperature:
+  hidden: true
+sensor.living_room_sensor_alarm_type:
+  hidden: true
+sensor.living_room_sensor_alarm_level:
+  hidden: true
+sensor.living_room_sensor_sourcenodeid:
+  hidden: true
+sensor.noise_machine_energy:
+  hidden: true
+sensor.noise_machine_prev_reading:
+  hidden: true
+sensor.noise_machine_power:
+  hidden: true
+sensor.noise_machine_voltage:
+  hidden: true
+sensor.noise_machine_current:
+  hidden: true
+sensor.garage_door_access_control:
+  hidden: true
+sensor.garage_door_alarm_level:
+  hidden: true
+sensor.garage_door_alarm_type:
+  hidden: true
+sensor.garage_door_burglar:
+  hidden: true
+binary_sensor.garage_door_sensor:
+  hidden: true
+sensor.garage_door_source_nodeid:
+  hidden: true
+sensor.front_door_deadbolt_alarm_level:
+  hidden: true
+sensor.front_door_deadbolt_alarm_type:
+  hidden: true
+sensor.johnny__jackie_eta:
   hidden: true

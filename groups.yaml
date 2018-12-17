@@ -9,7 +9,7 @@ bedroom:
   entities:
     - switch.bedroom_fan_switch
     - light.bedroom_light_level
-    - switch.noise_machine_switch
+    - switch.noise_machine
 
 living_room: 
   name: Living Room
@@ -32,17 +32,30 @@ laundry-room:
   entities:
     - switch.laundry_room_light_switch
 
-office:
-  name: Office
+zoe_room:
+  name: Zoe's Room
   entities:
-    - switch.office_fan_switch
-    - light.office_light_level
+    - switch.zoe_fan_switch
+    - light.zoe_light_level
 
-nursery:
-  name: Nursery
+charlie_room:
+  name: Charlie's Room
   entities:
-    - switch.nursery_fan_switch
-    - light.nursery_light_level
+    - switch.charlie_fan_switch
+    - light.charlie_light_level
+
+front_door:
+  name: Front Door
+  entities:
+    - switch.front_entryway_light_switch
+    - switch.front_entryway_outside_light_switch
+    - lock.front_door_deadbolt_locked
+    
+garage:
+  name: Garage
+  entities:
+    - switch.garage_light_switch
+    - cover.garage_door
 
 presence:
   name: People
